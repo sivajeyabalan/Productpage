@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Arial" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .container {
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+      width: 520px;
+      height: 350px;
+      background: #F5F5F5;
+      box-shadow: 5px 5px 15px rgba(186, 126, 126, 0.5);
+      border-radius: 10px;
+      margin-top: 12%;
+    }
+
+    p {
+      font-size: 0.6em;
+      color: #4E4E4E;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      color: #4E4E4E;
+      margin-top: -5px;
+    }
+
+    h2 {
+      color: #ea6f6a;
+      margin-top: -5px;
+    }
+
+    img {
+      width:50%;
+      height: 100%;
+      margin-top: 47px;
+    }
+
+    .slideshow-buttons {
+      top: 70%;
+      display: none;
+    }
+
+    .one, .two, .three, .four {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #F5F5F5;
+    }
+
+    .one {
+      left: 22%;
+    }
+    .two {
+      left: 27%;
+    }
+    .three {
+      left: 32%;
+    }
+    .four {
+        left: 37%;
+      }
+
+      .product {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        top: 10%;
+        left: 60%;
+      }
+
+      .desc {
+        text-transform: none;
+        letter-spacing: 0;
+        margin-bottom: 17px;
+        color: #4E4E4E;
+        font-size: 0.7em;
+        line-height: 1.6em;
+        margin-right: 25px;
+        text-align: justify;
+      }
+
+      button {
+        background: #fa9292;
+        padding: 10px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        margin: -1px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #F5F5F5;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #fd0202;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .add {
+        width: 67%;
+      }
+
+      .like {
+        width: 22%;
+      }
+
+      .sizes {
+        display: grid;
+        color: #C3A1A0;
+        grid-template-columns: repeat(auto-fill, 30px);
+        width: 60%;
+        grid-gap: 4px;
+        margin-left: 20px;
+        margin-top: 5px;
+      }
+
+      .sizes:hover {
+        cursor: pointer;
+      }
+
+      .size {
+        padding: 9px;
+        border: 1px solid #F5F5F5;
+        font-size: 0.7em;
+        text-align: center;
+      }
+
+      .size:hover {
+        background: #BA7E7E;
+        color: #F5F5F5;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .focus {
+        background: #BA7E7E;
+        color: #F5F5F5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="images">
+        <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10161575/2019/11/6/5b3c2719-865c-4833-b34e-3b955ce9d9a71573039126568-WROGN-Men-Black-Textured-Sneakers-3541573039124985-1.jpg" >
+      </div>
+      <div class="slideshow-buttons">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+      </div>
+      <p class="pick">choose size</p>
+      <div class="sizes">
+        <div class="size">5</div>
+        <div class="size">6</div>
+        <div class="size">7</div>
+        <div class="size">8</div>
+        <div class="size">9</div>
+        <div class="size">10</div>
+        <div class="size">11</div>
+        <div class="size">12</div>
+      </div>
+      <div class="product">
+        <p>Women's Running Shoe</p>
+        <h1>Nike Epic React Flyknit</h1>
+        <h2>$150</h2>
+        <p class="desc">Experience comfort and style with the Men's<strong> Nike Air Zoom Pegasus 38</strong>. Responsive Zoom Air units, a breathable mesh upper, and a secure dynamic midfoot band make it your ideal choice for on-the-go comfort and versatility.</p>
+        <div class="buttons">
+          <button class="add">Add to Cart</button>
+          <button class="like"><span>♥</span></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
